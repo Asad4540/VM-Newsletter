@@ -6,37 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vereigen Media</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Text Outline and Stroke in CSS</title>
+    <style>
+        .outlined-text {
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+            color: #FFC948;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="mx-auto border border-black md:w-1/2 bg-cover h-screen"
-        style="background-image: url('images/Newsletter_plane.jpg');">
+    <div class="mx-auto border border-black bg-cover "
+        style="background-image: url('images/Newsletter_plane.jpg');width:600px;">
         <nav class="mt-5">
             <img src="images/VM logos-09.png" style="width: 30%;" alt="">
         </nav>
 
         <section>
-            <div class="ml-10 mt-8 font-bold text-gray-50 text-3xl ">
+            <div class="ml-8 mt-3 font-bold text-gray-50 text-2xl">
                 <p>LOOKING TO</p>
                 <p>CONNECT WITH YOUR</p>
                 <p class="text-yellow-400">IDEAL CUSTOMERS</p>
                 <p>MORE EFFECTIVELY?</p>
             </div>
-            <div class="mt-60">
+            <div class="mt-48">
                 <div class="">
-                    <p class="text-4xl font-bold text-center">WELCOME TO VEREIGEN MEDIA!</p>
+                    <p class=" text-4xl font-extrabold text-center tracking-tight ">WELCOME TO VEREIGEN MEDIA!</p>
                 </div>
-                <div class="mx-7 mt-1 font-bold">
+                <div class="mx-7 mt-1 font-semibold leading-tight tracking-tighter">
                     <p>
                         We are a dynamic B2B demand generation firm focused on driving success through data, process,
                         and
                         enablement.</p>
-                    <p class="mt-1">With a robust global network of over 86 million validated contacts, we specialize in delivering
+                    <p class="mt-1">With a robust global network of over 86 million validated contacts, we specialize in
+                        delivering
                         bespoke digital programs to connect with your target
                         personas
                         across diverse industries.</p>
                 </div>
-
+                <div class="mt-20">
+                    <div class=" ml-7 ">
+                        <p class="outlined-text font-bold text-7xl">WHAT WE DO</p>
+                    </div>
+                    <div class="mx-7">
+                        <p class="font-bold">We optimize your marketing efforts and drive growth through:</p>
+                        <ul class="list-disc pl-10">
+                            <li>Content Syndication: Increase your content's visibility and engage potential customers
+                                effectively.</li>
+                            <li>Account-Based Marketing (ABM): Focus on high-value accounts with tailored campaigns that
+                                drive impact.</li>
+                            <li>Intent Data: Gain insights into your prospects' purchasing intent and enhance your
+                                marketing strategies accordingly.</li>
+                            <li>Performance Media: Optimize your advertising spend with precision and maximize your ROI.
+                            </li>
+                            <li>Event Registration: Boost attendance and engagement for your webinars, conferences, and
+                                virtual events.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
